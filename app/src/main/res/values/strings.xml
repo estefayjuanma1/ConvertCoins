@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Convertc</string>
+    <string name="conversor_de_monedas">Conversor de monedas</string>
+    <string name="pesos_colombianos">COP</string>
+    <string name="dolares">Dólares</string>
+    <string name="euros">Euros</string>
+    <string name="desea_convetir_a">Desea convetir a:</string>
+    <string name="convertir">Convertir</string>
+    <string name="valor_a_convertir">Valor a convertir</string>
+
+    <string-array name="coins">
+        <item>COP</item>
+        <item>Dolar</item>
+        <item>Euros</item>
+    </string-array>
+</resources>

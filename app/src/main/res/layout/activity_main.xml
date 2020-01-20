@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightgray"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/conversor_de_monedas"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/coins"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="50dp"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/valor_a_convertir"
+        android:id="@+id/et_cantidad"
+        android:inputType="number"
+        android:layout_margin="8dp"
+        android:gravity="center"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_pesos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:checked="true"
+            android:text="@string/pesos_colombianos" />
+
+        <RadioButton
+            android:id="@+id/rb_dolares"
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dolares" />
+
+        <RadioButton
+            android:id="@+id/rb_euros"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/euros" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_moneda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/desea_convetir_a"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+
+    <Spinner
+        android:id="@+id/sp_coins"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="8dp"
+        android:entries="@array/coins"/>
+
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_margin="8dp"
+        android:hint="El valor es"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/bt_convertir"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/convert"
+        android:bufferType="editable"
+        android:gravity="center"
+        />
+
+</LinearLayout>
+</ScrollView>
